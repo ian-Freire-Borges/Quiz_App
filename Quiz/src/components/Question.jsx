@@ -16,7 +16,7 @@ const Question = () => {
     console.log(quizState);
   return (
     <div id='question'>
-        <p>pergunta {quizState.currentQuestion + 1} de {quizState.questions.length}</p>
+        <p>Pergunta {quizState.currentQuestion + 1} de {quizState.questions.length}</p>
 
         <h2>{currentQuestion.question}</h2>
 
@@ -33,7 +33,7 @@ const Question = () => {
                 <button onClick={()=>dispatch({type: "SHOW_TIP",})}>Dica x {quizState.helpCount}</button>
             )}
             {quizState.deleteCount> 0 &&(
-                <button onClick={()=> dispatch({type: "REMOVE"})}>Ecluir uma x {quizState.deleteCount}</button>
+                <button onClick={()=> dispatch({type: "REMOVE"})}>Excluir uma x {quizState.deleteCount}</button>
             )}
             </>
         )}

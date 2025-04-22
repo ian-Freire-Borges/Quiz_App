@@ -12,7 +12,7 @@ function PickCategory() {
   return (
     <div id="category">
        <h2>Escolha uma categoria</h2>
-       <p>As perguntas serão referentes a os temas abaixo</p>
+       <p>As perguntas serão referentes aos temas abaixo</p>
        <div>
        {quizState.questions.map((question)=>(
         <button onClick={()=> choseCategoryAndReorderQuestion(question.category)} key={question.category}>
